@@ -166,8 +166,8 @@ Sound.prototype.setSpeakerphoneOn = function(value) {
 
 // This is deprecated.  Call the static one instead.
 
-Sound.prototype.setCategory = function(value) {
-  Sound.setCategory(value, false);
+Sound.prototype.setCategory = function(value, mixWithOthers = false) {
+  Sound.setCategory(value, mixWithOthers);
 }
 
 Sound.enable = function(enabled) {
